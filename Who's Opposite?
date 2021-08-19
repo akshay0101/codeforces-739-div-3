@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+ 
+ 
+int main()
+{
+ios::sync_with_stdio(0);
+            cin.tie(0);
+            cout.tie(0);
+            cout<<fixed;
+            cout<<setprecision(10);
+int t;
+cin>>t;            
+while(t--){
+int a,b,c;
+cin>>a>>b>>c;
+int size=2*abs(b-a);
+int d=(c+abs(b-a));
+if(d>size){
+    d=d%size;
+}
+if(c>size || a>size || b>size){
+  cout<<-1<<endl;
+  continue;
+}
+else{
+    cout<<d<<endl;
+}
+ 
+ 
+}
+return 0;
+}
